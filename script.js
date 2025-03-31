@@ -16,8 +16,8 @@ function updateDateTime(){
 	};
 
 
-	const formatteDate = now.toLocaleDateString('en-US', dateOptions);
-    const formatteDate = now.toLocaleTimeString('en-US', timeOptions);
+	const formattedDate = now.toLocaleDateString('en-US', dateOptions);
+    const formattedTime = now.toLocaleTimeString('en-US', timeOptions);
 
 	document.getElementById('timer').textContent = `${formattedDate}, ${formattedTime}`;  
 }
