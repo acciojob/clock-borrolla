@@ -19,7 +19,8 @@ function updateDateTime(){
 	const formatteDate = now.toLocaleDateString('en-US', dateOptions);
     const formatteDate = now.toLocaleTimeString('en-US', timeOptions);
 
-	document.getElementById('timer').textContent = `${formattedDate}, ${formatteTime}`;
+	document.getElementById('timer').textContent = `${formattedDate}, ${formattedTime}`;  
+}
 
 	setInterval(updateDateTime, 1000);
 
